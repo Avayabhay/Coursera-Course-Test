@@ -147,6 +147,14 @@ body{
         height: 20px;
         width: 20px;
     }
+    .container .jumbotron{
+        padding: 0px;
+    }
+
+    .row #menutile, .row #specials-tile{
+        width: 360px ;    
+        margin: 0 auto 15px;
+    }
 }
 
 /* TElephone No. */
@@ -176,7 +184,7 @@ body{
 #menutile, #specials-tile, #maptile{
     height: 250px;
     width: 100%;
-    border: 2px solid #320907;
+    border: 1px solid #320907;
     margin-bottom: 15px;
     overflow: hidden;
     position: relative;
@@ -184,4 +192,71 @@ body{
 
 #menutile:hover, #specials-tile:hover, #maptile:hover{
     box-shadow: 0 1px 5px 1px grey;
+}
+
+#menutile{
+    background: url(../Img/meneuile_250.jpg) no-repeat center;
+}
+
+#specials-tile{
+    background: url('../Img/specialtile_250.jpg') no-repeat center;
+}
+
+#menutile span,#specials-tile span, #maptile span{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+    font-size: 1.6em;
+    background-color: #222121;
+    opacity: 0.7;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*Footer */
+@media (max-width: 476px){
+    .navbar-brand h1{
+        font-size: 6vw;
+    }
+    .row #menutile,.row #specials-tile{
+        width:280px;
+    }
+}
+
+.panel-footer{
+    background-color: #222;
+    color: white;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.row section{
+    margin-bottom: 30px;
+}
+#hours span, #head{
+    font-size: 1.3em;
+}
+
+#hours, #Address{
+    line-height: 1.8em;
+}
+
+#Address p{
+    color: green;
+    font-size: 0.8em;
+    line-height: 1.6em;
+}
+
+#Testimonials{
+    font-style: italic;
+}
+
+#Testimonials p:nth-child(2){
+    margin-top: 15px;
+}
+
+hr{
+    width:50%;
 }
