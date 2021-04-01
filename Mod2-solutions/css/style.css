@@ -1,0 +1,129 @@
+
+
+*{
+	box-sizing: border-box;	
+}
+
+body{
+		background-color: beige;
+		font-family:  Reggae One;
+	}
+
+
+h1{
+	text-align: center;
+	padding: 25px;
+/*	text-shadow: 20px 10px;
+*/}
+
+.container{
+	margin: auto;
+
+}
+
+.chicken{
+	background-color: #a49797;
+	border: 2px solid black;
+	display: inline-block;
+	padding: 28px 6px 12px 6px;
+	position: relative;
+	margin-left: 2%;
+	margin-bottom: 4%;
+	/*margin: auto;*/
+
+	}
+
+.Beef{
+	background-color: #a49797;
+	border: 2px solid black;
+	display: inline-block;
+	padding: 28px 6px 12px 6px;
+	position: relative;
+	margin-left: 2%;
+	margin-bottom: 4%;
+
+
+	}
+
+.Shushi{
+	background-color: #a49797;
+	border: 2px solid black;
+	display: inline-block;
+	padding: 28px 6px 12px 6px;
+	position: relative;
+	margin-left: 2%;
+	margin-bottom: 4%;
+
+
+	}
+.cHead{
+		position: absolute;
+		border: 2px solid black;
+		background-color: #c76969;
+		display: block;
+		padding: 3px;
+		top: -2px;
+		right: -2px;
+		/*float:right;*/
+		clear: both;
+}
+.bHead{
+	position: absolute;
+		border: 2px solid black;
+		background-color: #db79c3;
+		display: block;
+		padding: 3px;
+		top: -2px;
+		right: -2px;
+		/*float:right;*/
+		clear: both;	
+
+}
+.sHead{
+	position: absolute;
+		border: 2px solid black;
+		background-color: #87bbc9;
+		display: block;
+		padding: 3px;
+		top: -2px;
+		right: -2px;
+		/*float:right;*/
+		clear: both;
+}
+
+@media(min-width: 992px) {
+	*{
+		box-sizing: border-box;
+	}
+	.chickenLarge{
+	/*	position: absolute;*/
+		/*left: 20px;*/
+		width: 30%;
+	}
+
+	.BeefLarge{
+		width: 30%;
+		/*margin: auto;*/
+	/*	position: absolute;
+	*/
+	}
+
+	.ShushiLarge{
+		width: 30%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.chickenTab{
+		width: 45%;
+
+	}
+	.BeefTab{
+		width: 45%;
+	}
+
+	.ShushiTab{
+		display: block;
+		margin-right: 5.4%
+
+	}
+}

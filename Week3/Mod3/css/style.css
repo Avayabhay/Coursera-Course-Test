@@ -1,0 +1,58 @@
+body{
+    box-sizing: border-box;
+    background-color: #c1c797;
+    /* background-color: aquamarine; */
+}
+#title{
+    background-color: #a6c6a6 ;
+}
+#menu{
+    clear: left;
+    margin-top: -10px;
+}
+#menu li a{
+    /* text-shadow: 1px 1px blue; */
+    /* color: black; */
+    background-color: #a6c6a6;
+    font-size: 20px;
+}
+#menu li a:hover{
+    background-color: cornsilk;
+    /* color: white; */
+}
+.navbar-brand h1:hover{
+    background-color: cornsilk;
+    text-decoration: none;
+
+}
+.navbar-brand h1:focus{
+    background-color: cornsilk;
+    text-decoration: none;
+
+}
+
+.main-content{
+    background-color: #a3c8ca;
+}
+.dish{
+    padding: 30px 20px;
+}
+.dish .cHead{
+    font-weight: 600;
+    font-size: 15px;
+    padding-bottom: 15  px;
+}
+hr{
+    width: 50%;
+}
+
+/*   media Query   */
+@media (max-width:767px){
+    .navbar-brand h1{
+        font-size: 5vw;
+    }
+    .container button{
+        margin-bottom: 17px;
+        margin-top: 17px;
+    }
+}
