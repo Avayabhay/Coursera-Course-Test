@@ -1,0 +1,362 @@
+body{
+    background-color: #510D0A;
+    color: white;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+#navheading{
+    background-color: #ffc107;
+    border-radius: 0;
+    border: 0;
+}
+
+#imglogo{
+    background: url('../Img/logo2.png') ;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    width: 170px;
+    height: 130px;
+    margin: 6px;
+    filter: invert(90%);
+}
+
+#imglogo:hover{
+    filter: invert(100%);
+}
+.navbar-brand a{
+    font-size: 34px;
+
+}
+.navbar-brand{
+    padding:15px;
+}
+
+.navbar-brand p span{
+    color: black;
+    padding: 2px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.navbar-brand a:hover, a:focus{
+    text-decoration: none;
+    
+}
+
+.navbar-brand h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    line-height: 0.7;
+    padding: 2px;
+}
+
+.star{
+    width: 40px;
+    height: 40px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  
+}
+
+/* stlying navigation bar */
+
+#navlist{
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#navlist a{
+    color:#510D0A;
+    text-align: center;
+}
+
+#navlist a:hover{
+    color: #997850;
+    background-color: blanchedalmond;
+}
+
+#navlist a{
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#navlist a span{
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header span.icon-bar{
+    border: 1px solid maroon;
+}
+
+.navbar-toggle{
+    clear: both;
+    margin-top: -20px;
+}
+.container .jumbotron{
+    box-shadow: 0 0 50px black;
+}
+ 
+
+/* TElephone No. */
+#tel{
+    border-top: 4px solid #510D0A;
+    margin-top: 5px;
+    padding: 6px;
+    color: #510D0A;
+    font-size: 4.5vw;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+}
+#tel span{
+    color: #510D0A;
+}
+#tel div{
+    color: #510D0A;
+    font-size: 4vw;
+}
+
+#tel:active{
+    color: cadetblue;
+}
+
+/*  TILES   */
+#menutile, #specials-tile, #maptile{
+    height: 250px;
+    width: 100%;
+    border: 1px solid #320907;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+#menutile:hover, #specials-tile:hover, #maptile:hover{
+    box-shadow: 0 1px 5px 1px grey;
+}
+
+#menutile{
+    background: url(../Img/meneuile_250.jpg) no-repeat center;
+}
+
+#specials-tile{
+    background: url('../Img/specialtile_250.jpg') no-repeat center;
+}
+
+#menutile span,#specials-tile span, #maptile span{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+    font-size: 1.6em;
+    background-color: #222121;
+    opacity: 0.7;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*------------------------Menu CSS ------------------------------*/
+
+.tile{
+    position: relative;
+    border: 1px solid rgb(77, 65, 65);
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    margin: 15px auto;
+}
+
+.tile span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(15, 13, 13);
+    text-align: center;
+    opacity: .7;
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+}
+.tile:hover{
+    box-shadow: 0 1px 5px 5px rgb(151, 112, 28);
+}
+
+#menu-categories{
+    color: white;
+    margin-bottom: 30px;
+
+
+}
+/*-----------------------Single-category css */
+#menu-title{
+    margin: 15px auto 5px;
+}
+#lunch-hanger{
+    margin-bottom: 20px;
+}
+.item{
+    margin-bottom: 25px;
+}
+.item .item-price{
+    font-size: 1.1em;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.item .item-price span{
+    font-size: 0.6em;
+    font-style: oblique;
+}
+.item-pic{
+    position: relative;
+    border: 2px solid #320907;    
+    overflow: hidden;
+    padding: 0;
+    max-width: 250px;
+
+}
+.item-pic div{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 94, 23);
+}
+.item-desc{
+    padding-right: 30px;
+}
+.item-desc h3{
+     margin: 0 0 20px;
+}
+.item-desc p{
+    font-style: italic;
+} 
+/*--------------------------Footer---------------------------- */
+
+
+.panel-footer{
+    background-color: #222;
+    color: white;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.row section{
+    margin-bottom: 30px;
+}
+#hours span, #head{
+    font-size: 1.3em;
+}
+
+#hours, #Address{
+    line-height: 1.8em;
+}
+
+#Address p{
+    color: green;
+    font-size: 0.8em;
+    line-height: 1.6em;
+}
+
+#Testimonials{
+    font-style: italic;
+}
+
+#Testimonials p:nth-child(2){
+    margin-top: 15px;
+}
+
+hr{
+    width:50%;
+}
+
+
+
+/*---------------------MediaQuery---------------------------------------*/
+@media (min-width: 1200px){
+    .container .jumbotron{
+        background: url('../Img/second_1200.jpg') no-repeat;
+        height: 1600px;
+        
+    }
+} 
+
+@media(min-width:992px) and (max-width: 1199px)
+{
+    .container .jumbotron{
+        background: url('../Img/second_992.jpg') no-repeat;
+        height: 1300px; 
+    }
+} 
+
+@media (min-width: 768px) and (max-width:991px){
+
+    .container .jumbotron{
+        background: url('../Img/second_768.jpg') no-repeat;
+        height: 1021px;
+    }
+
+    #navlist{
+        margin-bottom: 6px;
+        margin-top: 4px;
+    }
+    #cert{
+        margin-top: -5px;;
+    }
+    h1{
+        margin-top: -2px;
+    }
+}
+
+@media (max-width: 767px){
+    .navbar-brand{
+        padding: 10px 10px 0px 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        margin-bottom: 0px;;
+        padding: 10px;
+        font-size: 5vw;
+    }
+     .navbar-brand p span{
+        font-size: .6em;
+    } 
+    .navbar-brand p img{
+        height: 20px;
+        width: 20px;
+    }
+    .container .jumbotron{
+        padding: 0px;
+    }
+
+    .row #menutile, .row #specials-tile{
+        width: 360px ;    
+        margin: 0 auto 15px;
+    }
+    /* FOR SINGLE MENU CATEGORY*/
+    .item-pic{
+        margin: 0 auto;
+    }
+    .item .item-price{
+        text-align: center;
+    }
+    .item-desc{
+        text-align: center;
+    }
+}
+@media (max-width: 476px){
+    .navbar-brand h1{
+        font-size: 6vw;
+    }
+    .row #menutile,.row #specials-tile{
+        width:280px;
+    }
+    .col-xxs-12{
+        position:relative;
+        min-height:1px;
+        padding-right:15px;
+        padding-left:15px;
+        float:left;
+        width:100%;
+
+    }
+}
