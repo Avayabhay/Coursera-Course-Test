@@ -100,6 +100,7 @@ $(function () {
         var finalHTML = '<section class="row">';
         menuItemHeadingHTML = insertProperty(menuItemHeadingHTML, "name", categoryMenuItems.category.name );
         menuItemHeadingHTML = insertProperty(menuItemHeadingHTML, "special_instruction", categoryMenuItems.category.special_instruction );
+        finalHTML += menuItemHeadingHTML;
         var menu_items = categoryMenuItems.menu_items;
         
         for(var i=0; i<menu_items.length; i++){
