@@ -26,7 +26,7 @@
                 isJsonResponse = true;
             }
             if(isJsonResponse){
-                responseHandler(JSON.parse(request.respnseText));
+                responseHandler(JSON.parse(request.responseText));
             }
             else{
                 responseHandler(request.responseText);
