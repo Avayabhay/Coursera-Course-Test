@@ -50,11 +50,14 @@ $(function () {
     obj.loadMenuCategories = function () {
         showLoading("#main-content");
         $ajaxUtils.sendGetRequest(allCategoriesURL, buildAndShowCategoriesHTML);
+        
+        
     };
 
     function buildAndShowCategoriesHTML(categories) {
         $ajaxUtils.sendGetRequest(menuHeading, function (menuHeading) {
             $ajaxUtils.sendGetRequest(menuSingleCate, function (menuSingleCate) {
+                showMenuActive();
                 var menuPageHTML = buildMenuHTMLPage(categories, menuHeading, menuSingleCate);
                 insertHTML("#main-content", menuPageHTML);
             }, false)
@@ -90,6 +93,7 @@ $(function () {
     function buildAndShowMenuItems(categoryMenuItems){
         $ajaxUtils.sendGetRequest(menuItemHeadingHTML, function(menuItemHeadingHTML){
             $ajaxUtils.sendGetRequest(menuItemHTML, function(menuItemHTML){
+                
                 var menuItemsHTMLView = buildMenuItemsHTMLView(categoryMenuItems, menuItemHeadingHTML, menuItemHTML);
                 insertHTML("#main-content", menuItemsHTMLView);
             }, false);
@@ -161,6 +165,19 @@ $(function () {
         return finalHTML;
 
 
+    };
+
+    //Function for changing active class of Menu
+    var showMenuActive = function(){
+        var classes  = document.querySelector("#navHomeButton").className;
+        classes = classes.replace(new RegExp("active", "g")," ");
+        document.querySelector("#navHomeButton").className =classes;
+
+        classes = document.querySelector("#navMenuButton").className;
+        if(classes.indexOf("active") == -1){
+            classes += " active";
+            document.querySelector("#navMenuButton").className = classes;
+        }
     };
 
 
